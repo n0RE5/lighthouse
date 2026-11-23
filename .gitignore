@@ -1,0 +1,6 @@
+/.editor
+/run
+*.swp
+*.swo
+*.swn
+.DS_Store
