@@ -131,13 +131,6 @@ function lighthouse.save_preset(name, profile, owner, overwrite, mode)
     if lighthouse.data.presets[name] and not overwrite then
         return nil, "This name already exists"
     end
-    local count = 0
-    for _ in pairs(lighthouse.data.presets) do
-        count = count + 1
-    end
-    if count >= 200 and not lighthouse.data.presets[name] then
-        return nil, "Limit: 200 saved profiles"
-    end
     mode = mode or "full"
     local checked, message = lighthouse.validate(profile, mode)
     if not checked then
