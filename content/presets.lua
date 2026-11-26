@@ -55,7 +55,7 @@ function lighthouse.register_builtin_presets()
     register_profile("Golden Hour", {
         lighting = {saturation = 1.06, shadows = {intensity = 0.42, tint = {r = 20, g = 15, b = 9}},
             bloom = {intensity = 0.18, strength_factor = 1.2, radius = 2.8}, volumetric_light = {strength = 0}},
-        sun = {visible = true, scale = 0.7},
+        sun = {visible = true},
         sky = {sky_color = {day_sky = "#b9b3c3", day_horizon = "#e8c59b", dawn_horizon = "#dba276"}},
         clouds = {color = "#e3c8a9df", density = 0.22},
     })
@@ -154,7 +154,7 @@ function lighthouse.register_builtin_presets()
             bloom = {intensity = 0.18, strength_factor = 1.2, radius = 2.8},
             volumetric_light = {strength = 0},
         },
-        sun = {visible = true, scale = 0.7},
+        sun = {visible = true},
         sky = {sky_color = {day_sky = "#af96dc", day_horizon = "#f5ccdd"}},
         clouds = {density = 0.3, color = "#dac7e4ce"},
     })
@@ -165,7 +165,7 @@ function lighthouse.register_builtin_presets()
             bloom = {intensity = 0.18, strength_factor = 1.2, radius = 2.8},
             volumetric_light = {strength = 0},
         },
-        sun = {visible = true, scale = 0.7},
+        sun = {visible = true},
         sky = {
             type = "plain", base_color = "#808e9d", clouds = false, auto_dim_skybox = false,
             sky_color = {day_sky = "#6b8eac", day_horizon = "#b3b5b3",

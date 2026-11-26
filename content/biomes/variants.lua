@@ -18,7 +18,7 @@ function lighthouse.register_biome_variants()
     local function atmosphere(base, sky, horizon, tint, strength)
         return lighthouse.merge(base, {
             lighting = {shadows = {intensity = strength}, volumetric_light = {strength = 0}},
-            sun = {visible=true, scale=0.7},
+            sun = {visible=true},
             sky = {sky_color = {day_sky=sky, day_horizon=horizon, dawn_sky=sky, dawn_horizon=horizon},
                 fog = {fog_color = horizon:sub(1,7) .. "ff"}},
             clouds = {color = tint:sub(1,7) .. "d8"},
@@ -51,7 +51,7 @@ function lighthouse.register_biome_variants()
                 late = lighthouse.merge(template, {
                     lighting = {static = day.lighting.static, volumetric_light = {strength=0}},
                     sky = {fog = {fog_color=mix(horizon,"#94aaa6",0.65).."ff", fog_distance=150, fog_start=0.4}},
-                    sun = {visible=true, scale=0.7},
+                    sun = {visible=true},
                 })
                 late_label = id == "rainforest" and "Monsoon" or "Wet Mist"
             elseif cold[id] then

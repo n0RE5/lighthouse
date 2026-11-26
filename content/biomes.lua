@@ -40,7 +40,7 @@ function lighthouse.register_biome_content()
                     shadows = {tint = {r = row[9][1], g = row[9][2], b = row[9][3]}},
                     bloom = {intensity = row[10], strength_factor = 1.2, radius = 2.8},
                     volumetric_light = {strength = 0}},
-                sun = {visible = true, scale = 0.7},
+                sun = {visible = true},
                 sky = {type = "regular", clouds = true, auto_dim_skybox = true,
                     sky_color = {day_sky = row[4], day_horizon = row[5], dawn_sky = row[4], dawn_horizon = row[5]},
                     fog = {fog_color = row[5] .. "ff", fog_start = 0.65, fog_distance = row[11]}},
